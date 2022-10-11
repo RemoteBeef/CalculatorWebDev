@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <section>
+        <input type="text" id="inputBox">
+        <div class="container">
+            <!--TODO: Add set numbers, i.e PI, Eulers num, etc.-->
+            <div class="col">
+            <button onclick="GetInput(1)">1</button>
+            <button onclick="GetInput(2)">2</button>
+            <button onclick="GetInput(3)">3</button>
+            </div>
+            <div class="col">
+            <button onclick="GetInput(4)">4</button>
+            <button onclick="GetInput(5)">5</button>
+            <button onclick="GetInput(6)">6</button>
+            </div>
+            <div class="col">
+            <button onclick="GetInput(7)">7</button>
+            <button onclick="GetInput(8)">8</button>
+            <button onclick="GetInput(9)">9</button>
+            </div>
+            <button onclick="GetInput(0)">0</button>
+        </div>
+        <div id="functions">
+
+            <!--OPERATIONS-->
+            <button onclick="Add()">+</button>
+            <button onclick="Subtract()">-</button>
+            <button onclick="Divide()">/</button>
+            <button onclick="Multiply()">*</button>
+            <!-------------->
+
+            <button onclick="Calculate()">=</button>
+            <button onclick="ResetEverything()">C</button>
+            <button onclick="Backspace()">CE</button>
+        </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
